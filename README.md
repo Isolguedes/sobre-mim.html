@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Teste de Cores</title>
-  <style>
-    body {
-      background-color: #f2f2f2; /* cinza claro */
-      color: #ffb6c1; /* rosa pastel */
-      font-family: Arial, sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2; /* cinza claro */
+            color: #ffb6c1; /* rosa pastel */
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        p {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-  <h1>Título de Exemplo</h1>
-  <p>Este é um texto com fonte rosa pastel em um fundo cinza claro.</p>
+    <h1>SOPHIA GUEDES</h1>
+    <img src="eu.jpg" alt="Foto de perfil">
+    <p>
+        Oi, meu nome é Sophia, mas todos me chamam de Sol. Tenho 17 anos e sou natural de Belo Horizonte–MG, mas passei parte da minha vida em João Pessoa–PB. Sou atleticana e extremamente fanática pelo meu time. Sou uma pessoa muito criativa e curiosa, amo me reinventar e estar sempre com a mente ocupada.
+    </p>
+    <h2>MEUS  HOBBIES</h2>
+    <ul>
+        <li>Cozinhar</li>
+        <li>Pintar</li>
+        <li>Fazer compras</li>
+    </ul>
+    <p>
+        <a href="https://br.shein.com" target="_blank">Visite  meu site favorito</a>
+    </p>
+   
+    <input type="text" onchange="exibirTexto(this.value)" 
+    placeholder="oq você acha de mim?">
+    <p id="exibirTexto"></p>
+    <script>
+        function exibirTexto(texto) {
+            document.getElementById("exibirTexto").innerText =
+            "Você me acha " + texto;
+        }
+    </script>
 </body>
 </html>
