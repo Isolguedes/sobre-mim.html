@@ -41,7 +41,18 @@
     <p>
         <a href="https://br.shein.com" target="_blank">Visite  meu site favorito</a>
     </p>
-    
-    
+   
+        <input type="text" onchange="exibirTexto(this.value)" 
+        placeholder="oq você acha de mim?">
+        <p id="exibirTexto"></p>
+        <script>
+            function exibirTexto(texto) {
+        
+                document.getElementById("exibirTexto").innerText =
+                "Você me acha " + texto;
+            }
+        </script>
+
+
 </body>
 </html>
